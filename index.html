@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="icon" href="img/logoapp.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Vigia Urbano</title>
+</head>
+
+<body class="body">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-6 pl-sm-5 pr-sm-5 mx-auto colmain">
+                <img src="img/logoapp.png" class="pt-5 pt-sm-3 rounded mx-auto d-block" width="150">
+                <div class="mt-5 buttonTabs">
+                    <button role="tab" class="tablinks ml-2 pb-1" onclick="tabChanging(event, 'entrar')">
+                        Denúncia
+                    </button>
+                </div>
+
+                <div class="backDenuncia">
+                    <div class="tabDenuncia"></div>
+                </div>
+
+                <form class="mt-4">
+                    <div class="form-group">
+                        <label for="formGroupExampleInput" class="ml-2">Nome</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" required="required">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" class="ml-2">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="exemplo@email.com" required="required">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" class="ml-2">Crime</label>
+
+                        <div class="row mt-1">
+                            <div class="row pl-3">
+                                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1"
+                                        autocomplete="off" checked>
+                                    <label class="btn px-0" for="btnradio1">
+                                        <img src="img/logoapp.png" width="100px">
+                                    </label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2"
+                                        autocomplete="off">
+                                    <label class="btn px-0" for="btnradio2">
+                                        <img src="img/logoapp.png" width="100px">
+                                    </label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3"
+                                        autocomplete="off">
+                                    <label class="btn px-0" for="btnradio3">
+                                        <img src="img/logoapp.png" width="100px">
+                                    </label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio4"
+                                        autocomplete="off">
+                                    <label class="btn px-0" for="btnradio4">
+                                        <img src="img/logoapp.png" width="100px">
+                                    </label>
+                                </div>
+
+                                <div class="btn-group crimes" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio6"
+                                        autocomplete="off" checked>
+                                    <label class="btn px-0" for="btnradio6">
+                                        <img src="img/logoapp.png" width="100px">
+                                    </label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio7"
+                                        autocomplete="off">
+                                    <label class="btn px-0" for="btnradio7">
+                                        <img src="img/logoapp.png" width="100px">
+                                    </label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio8"
+                                        autocomplete="off">
+                                    <label class="btn px-0" for="btnradio8">
+                                        <img src="img/logoapp.png" width="100px">
+                                    </label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio9"
+                                        autocomplete="off">
+                                    <label class="btn px-0" for="btnradio9">
+                                        <img src="img/logoapp.png" width="100px">
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="ml-2">Localização</label>
+                            <div id="mapa"></div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117417.44578194727!2d-46.62886162490826!3d-23.122883413717073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cec11f46f1007d%3A0xc885a2d1bf078e37!2sAtibaia%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1623177756810!5m2!1spt-BR!2sbr"
+                                width="100%" height="350" style="border-radius: 3px; border: 0;" allowfullscreen=""
+                                loading="lazy"></iframe>
+                        </div>
+
+                        <button id="btnCadastrar" type="submit"
+                            class="btn btn-primary btn-block mt-4 mb-5">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+
+        </div>
+    </div>
+    </div>
+
+    <!-- JavaScript (Opcional) -->
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_API_DO_GOOGLE&callback=inicializar">
+    </script>
+    <script src="src/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

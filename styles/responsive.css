@@ -1,0 +1,11 @@
+@media (max-width: 575px) {
+  .body {
+    background-color: #0020cd;
+  }
+}
+
+@media (min-width: 576px) {
+  .colmain {
+    margin-top: 4rem;
+  }
+}

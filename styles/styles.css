@@ -1,0 +1,117 @@
+/* Background Colors */
+
+.colmain {
+  background-color: #0020cd;
+  border-radius: 5px;
+}
+
+.body {
+  background-color: #0018a0;
+}
+
+/* Background Colors */
+
+/* Login Buttons*/
+
+#cadastrar {
+  display: none;
+}
+
+.buttonTabs {
+  border-bottom: solid #000b49 2px;
+}
+
+.tablinks {
+  color: #fff;
+  background-color: unset;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.backEntrar {
+  background-color: #001797;
+  width: 68px;
+  height: 28px;
+  margin-top: -30px;
+  border-radius: 3px 3px 0 0;
+}
+
+.backCadastrar {
+  background-color: #001797;
+  width: 84px;
+  height: 28px;
+  margin-left: 4.5rem;
+  margin-top: -30px;
+  border-radius: 3px 3px 0 0;
+}
+
+.tabEntrar {
+  border-top: solid #fff 2px;
+  width: 68px;
+  position: absolute;
+  margin-top: 26px;
+}
+
+.tabCadastrar {
+  border-top: solid #fff 2px;
+  width: 84px;
+  position: absolute;
+  margin-top: 26px;
+}
+
+/* Login Buttons*/
+
+/* Form */
+
+.form-group {
+  color: #fff;
+}
+
+label.ml-2 {
+  padding-left: 6px;
+}
+
+small.ml-2 {
+  margin-top: 8px;
+  padding-left: 6px;
+}
+
+#btnCadastrar {
+  background-color: #000b49;
+  border-color: #000b49;
+}
+
+#btnCadastrar:hover {
+  background-color: #001069;
+  border-color: #001069;
+}
+
+/* Form */
+
+/* Denuncia */
+
+.backDenuncia {
+  background-color: #001797;
+  width: 93px;
+  height: 28px;
+  margin-top: -30px;
+  border-radius: 3px 3px 0 0;
+}
+
+input.btn-check {
+
+  visibility: hidden;
+}
+
+input:checked + label{
+
+  background-color: #fff;
+
+}
+
+/* Denuncia */
