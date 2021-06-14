@@ -103,7 +103,14 @@ small.ml-2 {
   border-radius: 3px 3px 0 0;
 }
 
-input.btn-check {
+.tabDenuncia {
+  border-top: solid #fff 2px;
+  width: 93px;
+  position: absolute;
+  margin-top: 26px;
+}
+
+input.form-check-input {
 
   visibility: hidden;
 }
@@ -111,7 +118,11 @@ input.btn-check {
 input:checked + label{
 
   background-color: #fff;
+}
 
+.form-check {
+
+  margin: auto;
 }
 
 /* Denuncia */
