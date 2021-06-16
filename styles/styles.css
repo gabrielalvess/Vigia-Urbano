@@ -111,18 +111,24 @@ small.ml-2 {
 }
 
 input.form-check-input {
-
   visibility: hidden;
 }
 
-input:checked + label{
-
-  background-color: #fff;
+input.form-check-input + label img {
+  border: solid transparent 8px;
+  border-radius: 5rem;
+  cursor: pointer;
 }
 
-.form-check {
+input.form-check-input:checked + label img {
+  border: solid #001069 8px;
+  border-radius: 5rem;
+}
 
-  margin: auto;
+.backIcons {
+  background-color: #0018a0;
+  border: solid #0018a0 5px;
+  border-radius: 5px;
 }
 
 /* Denuncia */

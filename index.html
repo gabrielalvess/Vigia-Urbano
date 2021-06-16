@@ -10,17 +10,15 @@
     <link rel="icon" href="img/logoapp.png">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <title>Vigia Urbano</title>
 </head>
 
 <body class="body">
     <div class="container">
         <div class="row">
-
-            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-6 pl-sm-5 pr-sm-5 mx-auto colmain">
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-6 pl-sm-5 pr-sm-5 mx-auto mt-sm-5 colmain">
                 <img src="img/logoapp.png" class="pt-5 pt-sm-3 rounded mx-auto d-block" width="150">
                 <div class="mt-5 buttonTabs">
                     <button role="tab" class="tablinks ml-2 pb-1" onclick="tabChanging(event, 'entrar')">
@@ -44,75 +42,66 @@
                             placeholder="exemplo@email.com" required="required">
                     </div>
 
-                    <div class="form-group crimes">
-                        <label for="exampleInputEmail1" class="ml-2">Crime</label>
-
-                        <div class="row mt-2">
-                            <div class="form-check ml-3 px-0">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                    value="option1">
-                                <label class="form-check-label" for="inlineRadio1"><img src="img/logoapp.png"
-                                        width="100px"></label>
-                            </div>
-
-                            <div class="form-check px-0">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                    value="option2">
-                                <label class="form-check-label" for="inlineRadio2"><img src="img/logoapp.png"
-                                        width="100px"></label>
-                            </div>
-
-                            <div class="form-check px-0">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                                    value="option3">
-                                <label class="form-check-label" for="inlineRadio3"><img src="img/logoapp.png"
-                                        width="100px"></label>
-                            </div>
-
-                            <div class="form-check mr-3 px-0">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
-                                    value="option4">
-                                <label class="form-check-label" for="inlineRadio4"><img src="img/logoapp.png"
-                                        width="100px"></label>
-                            </div>
-
-                        </div>
-
-                        <div class="row mt-2">
-                        <div class="form-check ml-3 px-0">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5"
-                                value="option5">
-                            <label class="form-check-label" for="inlineRadio5"><img src="img/logoapp.png"
-                                    width="100px"></label>
-                        </div>
-
+                    <div class="form-group">
+                        <label class="ml-2">Crime</label>
                         <div class="form-check px-0">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6"
-                                value="option6">
-                            <label class="form-check-label" for="inlineRadio6"><img src="img/logoapp.png"
-                                    width="100px"></label>
-                        </div>
-
-                        <div class="form-check px-0">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio7"
-                                value="option7">
-                            <label class="form-check-label" for="inlineRadio7"><img src="img/logoapp.png"
-                                    width="100px"></label>
-                        </div>
-
-                        <div class="form-check mr-3 px-0">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio8"
-                                value="option8">
-                            <label class="form-check-label" for="inlineRadio8"><img src="img/logoapp.png"
-                                    width="100px"></label>
-                        </div>
-                        </div>
+                            <div class="container backIcons">
+                                <div class="row text-center px-0">
+                                    <div class="col px-0">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">
+                                            <img src="img/logoapp.png" width="110px">
+                                            <span class="d-block">Crime 1</span>
+                                        </label>
 
 
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">
+                                            <img src="img/logoapp.png" width="110px">
+                                            <span class="d-block">Crime 2</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="col px-0">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio3" value="option3">
+                                        <label class="form-check-label" for="inlineRadio3">
+                                            <img src="img/logoapp.png" width="110px">
+                                            <span class="d-block">Crime 3</span>
+                                        </label>
+
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio4" value="option4">
+                                        <label class="form-check-label" for="inlineRadio4">
+                                            <img src="img/logoapp.png" width="110px">
+                                            <span class="d-block">Crime 4</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="col px-0">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio5" value="option5">
+                                        <label class="form-check-label" for="inlineRadio5">
+                                            <img src="img/logoapp.png" width="110px">
+                                            <span class="d-block">Crime 5</span>
+                                        </label>
+
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio6" value="option6">
+                                        <label class="form-check-label" for="inlineRadio6">
+                                            <img src="img/logoapp.png" width="110px">
+                                            <span class="d-block">Crime 6</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1" class="ml-2">Localização</label>
+                        <label class="ml-2">Localização</label>
                         <div id="mapa"></div>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117417.44578194727!2d-46.62886162490826!3d-23.122883413717073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cec11f46f1007d%3A0xc885a2d1bf078e37!2sAtibaia%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1623177756810!5m2!1spt-BR!2sbr"
@@ -120,31 +109,36 @@
                             loading="lazy"></iframe>
                     </div>
 
+                    <div class="form-group">
+                        <label class="ml-2">Apoio médico</label>
+                        <div class="custom-control custom-switch d-inline ml-2">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label" for="customSwitch1"></label>
+                        </div>
+                    </div>
+
                     <button id="btnCadastrar" type="submit" class="btn btn-primary btn-block mt-4 mb-5">Enviar</button>
                 </form>
             </div>
-        </div>
-
-        <div class="row">
-
         </div>
     </div>
     </div>
 
     <!-- JavaScript (Opcional) -->
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_API_DO_GOOGLE&callback=inicializar">
-    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_API_DO_GOOGLE&callback=inicializar"></script>
     <script src="src/scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
+    </script>
 </body>
 
 </html>
