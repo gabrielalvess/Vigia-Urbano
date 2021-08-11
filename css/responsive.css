@@ -1,0 +1,80 @@
+@media (max-width: 575px) {
+  .footer {
+    display: none;
+  }
+
+  button.btnLogin {
+    width: 100%;
+  }
+}
+
+@media (min-width: 575px) {
+  @media (max-height: 1134px) {
+    .btnEntrar {
+      margin-bottom: 15rem;
+    }
+    .btnCadastrar {
+      margin-bottom: 6rem;
+    }
+  }
+}
+
+@media (min-width: 575px) {
+  @media (max-height: 850px) {
+    .btnEntrar {
+      margin-bottom: 12rem;
+    }
+  }
+}
+
+@media (min-width: 575px) {
+  @media (max-height: 800px) {
+    .btnEntrar {
+      margin-bottom: 9rem;
+    }
+
+    .btnCadastrar {
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+@media (min-width: 575px) {
+  @media (max-height: 780px) {
+    .btnCadastrar {
+      margin-bottom: 1rem;
+    }
+
+    div#cadastrar .footer {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 575px) {
+  @media (max-height: 750px) {
+    .btnEntrar {
+      margin-bottom: 6rem;
+    }
+  }
+}
+
+@media (min-width: 575px) {
+  @media (max-height: 700px) {
+    .btnEntrar {
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+@media (min-width: 575px) {
+  @media (max-height: 660px) {
+    .btnEntrar {
+      margin-bottom: 1rem;
+    }
+
+    .footer {
+      display: none;
+    }
+  }
+}
