@@ -45,7 +45,7 @@ button:focus {
 .backLogin {
   font-weight: 500;
   color: #fff;
-  background-color: #001797;
+  background-color: #0020cd;
   padding-top: 4px;
   padding-bottom: 6px;
   padding-left: 1rem;
@@ -80,12 +80,12 @@ button:focus {
 /* Form */
 
 .btnEntrar {
-
+  margin-top: 6rem;
   margin-bottom: 1rem;
 }
 
 .btnCadastrar {
-
+  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -225,4 +225,3 @@ input.form-check-input:checked + label img {
 .input-div.pass {
   margin-bottom: 4px;
 }
-

@@ -18,7 +18,7 @@ function tabChanging(evt, tab1, tab2) {
   document.getElementById(tab1).style.display = "block";
   evt.currentTarget.className += " active";
 
-  document.getElementById(tab2).style.backgroundColor = "#001797";
+  document.getElementById(tab2).style.backgroundColor = "#0020cd";
   evt.currentTarget.className += " active";
 
 }
