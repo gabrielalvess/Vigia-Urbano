@@ -1,3 +1,4 @@
+// Tabs Button
 function tabChanging(evt, tab1, tab2) {
   var i, tabcontent, tablinks, backLogin;
 
@@ -23,8 +24,8 @@ function tabChanging(evt, tab1, tab2) {
 
 }
 
+// Inputs
 const inputs = document.querySelectorAll(".input");
-
 
 function addcl(){
 	let parent = this.parentNode.parentNode;

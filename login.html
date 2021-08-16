@@ -10,8 +10,8 @@
   <link rel="icon" href="img/logoapp.png">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
   <title>Vigia Urbano</title>
 </head>
@@ -30,7 +30,6 @@
       <button role="tab" class="tablinks" onclick="tabChanging(event, 'cadastrar', 'backcadastrar')">
         <span role="tab" class="backLogin" id="backcadastrar">Cadastrar</span>
       </button>
-
 
       <div class="ml-1 mr-1">
         <div id="entrar" class="tabcontent">
@@ -57,14 +56,13 @@
               <small id="emailHelp" class="form-text ml-3 pl-1">
                 <a href="index.html" class="smalltxt"><u>Esqueci minha senha</u></a>
               </small>
-
             </div>
+
             <div class="ml-2 mr-2 pl-2 pr-2 btnEntrar">
-              <button id="btnEntrar" type="submit"
-                class="btn btn-primary btn-lg btn-block m-auto btnLogin">Entrar</button>
+              <button id="btnEntrar" type="submit" class="btn btn-lg btn-block text-light m-auto btnLogin">Entrar</button>
             </div>
-          </form>
 
+          </form>
           <div class="fixed-bottom m-auto footer"></div>
         </div>
 
@@ -85,7 +83,7 @@
                 <div class="i"></div>
                 <div class="div">
                   <h5>Email</h5>
-                  <input type="password" class="input" required="required">
+                  <input type="email" class="input" required="required">
                 </div>
               </div>
 
@@ -93,7 +91,7 @@
                 <div class="i"></div>
                 <div class="div">
                   <h5>CPF</h5>
-                  <input minlength="11" maxlength="11" type="text" class="input" required="required" pattern="\d*">
+                  <input minlength="11" maxlength="11" type="number" class="input" required="required" pattern="\d*">
                 </div>
               </div>
 
@@ -105,6 +103,13 @@
                 </div>
               </div>
 
+              <div class="input-div pass">
+                <div class="i"></div>
+                <div class="div">
+                  <h5>Confirmar senha</h5>
+                  <input type="password" class="input" required="required">
+                </div>
+              </div>
             </div>
           </form>
 
@@ -114,20 +119,14 @@
           </small>
 
           <div class="ml-2 mr-2 pl-2 pr-2 btnCadastrar">
-            <button id="btnCadastrar" type="submit"
-              class="btn btn-primary btn-lg btn-block m-auto btnLogin">Cadastrar</button>
+            <button id="btnCadastrar" type="submit" class="btn btn-lg btn-block text-light m-auto btnLogin">Cadastrar</button>
           </div>
 
-            <div class="fixed-bottom m-auto footer"></div>
+          <div class="fixed-bottom m-auto footer"></div>
           </form>
         </div>
       </div>
     </div>
-
-    <div class="row">
-
-    </div>
-  </div>
   </div>
 
   <!-- JavaScript (Opcional) -->
@@ -136,11 +135,11 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
 </body>
 

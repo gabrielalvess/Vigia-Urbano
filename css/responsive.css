@@ -1,4 +1,5 @@
 @media (max-width: 575px) {
+  /* Mobile */
   .footer {
     display: none;
   }
@@ -9,19 +10,15 @@
 }
 
 @media (min-width: 575px) {
+  /* Web footer */
+
   @media (max-height: 804px) {
     div#cadastrar .footer {
       display: none;
     }
   }
-}
 
-@media (min-width: 575px) {
   @media (max-height: 719px) {
-    .btnEntrar {
-      margin-bottom: 1rem;
-    }
-
     .footer {
       display: none;
     }

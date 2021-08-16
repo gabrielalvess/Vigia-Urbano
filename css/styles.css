@@ -1,20 +1,12 @@
-/* Background Colors */
-
-.colmain {
-  border-radius: 5px;
-}
+/* #region Geral*/
 
 .body {
   background-color: #fff;
 }
 
-/* Background Colors */
+/* #endregion */
 
-/* Login Buttons*/
-
-#cadastrar {
-  display: none;
-}
+/* #region Login */
 
 .header {
   background-color: #0020cd;
@@ -25,7 +17,16 @@
   background-color: #0020cd;
   border-radius: 1.5rem 1.5rem 0 0;
   height: 50px;
-  width: 540px;
+  width: 570px;
+}
+
+.colmain {
+  background-color: #fff;
+  height: 100vh;
+}
+
+#cadastrar {
+  display: none;
 }
 
 .tablinks {
@@ -57,27 +58,16 @@ button:focus {
   background-color: #99999996;
 }
 
-.tabEntrar {
-  border-top: solid #fff 2px;
-  width: 68px;
-  position: absolute;
-  margin-top: 26px;
-}
-
-.tabCadastrar {
-  border-top: solid #fff 2px;
-  width: 84px;
-  position: absolute;
-  margin-top: 26px;
-}
-
 .smalltxt {
   color: #999;
 }
 
-/* Login Buttons*/
+/* #region Buttons */
 
-/* Form */
+.btnLogin:hover {
+  background-color: #001069;
+  border-color: #001069;
+}
 
 .btnEntrar {
   margin-top: 6rem;
@@ -86,7 +76,7 @@ button:focus {
 
 .btnCadastrar {
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 button.btnLogin {
@@ -95,47 +85,9 @@ button.btnLogin {
   width: 500px;
 }
 
-/* Form */
+/* #endregion */
 
-/* Denuncia */
-
-.backDenuncia {
-  background-color: #001797;
-  width: 93px;
-  height: 28px;
-  margin-top: -30px;
-  border-radius: 3px 3px 0 0;
-}
-
-.tabDenuncia {
-  border-top: solid #fff 2px;
-  width: 93px;
-  position: absolute;
-  margin-top: 26px;
-}
-
-input.form-check-input {
-  visibility: hidden;
-}
-
-input.form-check-input + label img {
-  border: solid transparent 8px;
-  border-radius: 5rem;
-  cursor: pointer;
-}
-
-input.form-check-input:checked + label img {
-  border: solid #001069 8px;
-  border-radius: 5rem;
-}
-
-.backIcons {
-  background-color: #0018a0;
-  border: solid #0018a0 5px;
-  border-radius: 5px;
-}
-
-/* Denuncia */
+/* #region Inputs */
 
 .loginContent .input-div {
   position: relative;
@@ -225,3 +177,47 @@ input.form-check-input:checked + label img {
 .input-div.pass {
   margin-bottom: 4px;
 }
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region Denuncia */
+
+.tabDenuncia {
+  border-top: solid #fff 2px;
+  width: 93px;
+  position: absolute;
+  margin-top: 26px;
+}
+
+input.form-check-input {
+  visibility: hidden;
+}
+
+input.form-check-input + label img {
+  border: solid transparent 5px;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+input.form-check-input:checked + label img {
+  transition: 0.5s;
+  border: solid #0020cd 5px;
+  border-radius: 5rem;
+}
+
+.backIcons {
+  background-color: #d9d9d9;
+  border: solid #d9d9d9 1px;
+  border-radius: 5px;
+}
+
+.btnEnviar {
+  padding-bottom: 1rem;
+}
+/* #endregion */
+
+/* #region */
+
+/* #endregion */
