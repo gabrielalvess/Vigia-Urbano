@@ -1,0 +1,27 @@
+@media (max-width: 575px) {
+  /* Mobile */
+  .footer {
+    display: none;
+  }
+
+  button.btnLogin {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 575px) {
+  /* Web footer */
+
+  @media (max-height: 804px) {
+    div#cadastrar .footer {
+      display: none;
+    }
+  }
+
+  @media (max-height: 719px) {
+    .footer {
+      display: none;
+    }
+  }
+}

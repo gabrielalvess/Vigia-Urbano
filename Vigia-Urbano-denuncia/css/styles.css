@@ -1,0 +1,238 @@
+/* #region Geral*/
+
+.body {
+    background-color: #fff;
+}
+
+
+/* #endregion */
+
+/* #region Login */
+
+.header {
+  background: linear-gradient(-45deg, #191970, #000080, #00008B, #0000CD, #0000FF, #6495ED, #4169E1, #1E90FF, #00BFFF, #87CEFA, #87CEEB, #ADD8E6, #4682B4);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  border-radius: 0 0 1.5rem 1.5rem;
+  }
+  
+  @keyframes gradient {
+  0% {
+  background-position: 0% 50%;
+  }
+  50% {
+  background-position: 100% 50%;
+  }
+  100% {
+  background-position: 0% 50%;
+  }  
+  }
+
+.footer {
+  background-color: #0020cd;
+  border-radius: 1.5rem 1.5rem 0 0;
+  height: 50px;
+  width: 570px;
+}
+
+.colmain {
+  background-color: #fff;
+  height: 100vh;
+}
+
+#cadastrar {
+  display: none;
+}
+
+.tablinks {
+  color: #fff;
+  background-color: unset;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.backLogin {
+  font-weight: 500;
+  color: #fff;
+  background-color: #0020cd;
+  padding-top: 4px;
+  padding-bottom: 6px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 1rem;
+}
+
+.backLogin#backcadastrar {
+  background-color: #99999996;
+}
+
+.smalltxt {
+  color: #999;
+}
+
+/* #region Buttons */
+
+.btnLogin:hover {
+  background-color: #001069;
+  border-color: #001069;
+}
+
+.btnEntrar {
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+}
+
+.btnCadastrar {
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+button.btnLogin {
+  background-color: #0020cd;
+  border-color: #0020cd;
+  width: 500px;
+}
+
+/* #endregion */
+
+/* #region Inputs */
+
+.loginContent .input-div {
+  position: relative;
+  margin: 15px 0;
+  padding: 5px 0;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.loginContent .input-div.one {
+  margin-top: 0;
+}
+
+.i {
+  color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.i i {
+  transition: 0.3s;
+}
+
+.input-div > div {
+  position: relative;
+  height: 30px;
+}
+
+.input-div > div > h5 {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.input-div:before,
+.input-div:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #0020cd;
+  transition: 0.4s;
+}
+
+.input-div:before {
+  right: 50%;
+}
+
+.input-div:after {
+  left: 50%;
+}
+
+.input-div.focus:before,
+.input-div.focus:after {
+  width: 50%;
+}
+
+.input-div.focus > div > h5 {
+  top: -5px;
+  font-size: 15px;
+}
+
+.input-div.focus > .i > i {
+  color: #0020cd;
+}
+
+.input-div > div > input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem 0.7rem;
+  font-size: 1.2rem;
+  color: #555;
+  font-family: "poppins", sans-serif;
+}
+
+.input-div.pass {
+  margin-bottom: 4px;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region Denuncia */
+
+.tabDenuncia {
+  border-top: solid #fff 2px;
+  width: 93px;
+  position: absolute;
+  margin-top: 26px;
+}
+
+input.form-check-input {
+  visibility: hidden;
+}
+
+input.form-check-input + label img {
+  border: solid transparent 5px;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+input.form-check-input:checked + label img {
+  transition: 0.5s;
+  border: solid #0020cd 5px;
+  border-radius: 5rem;
+}
+
+.backIcons {
+  background-color: #d9d9d9;
+  border: solid #d9d9d9 1px;
+  border-radius: 5px;
+}
+
+.btnEnviar {
+  padding-bottom: 1rem;
+}
+/* #endregion */
+
+/* #region */
+
+/* #endregion */
