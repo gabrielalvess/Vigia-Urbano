@@ -1,17 +1,32 @@
 /* #region Geral*/
 
 .body {
-  background-color: #fff;
+    background-color: #fff;
 }
+
 
 /* #endregion */
 
 /* #region Login */
 
 .header {
-  background-color: #0020cd;
+  background: linear-gradient(-45deg, #191970, #000080, #00008B, #0000CD, #0000FF, #6495ED, #4169E1, #1E90FF, #00BFFF, #87CEFA, #87CEEB, #ADD8E6, #4682B4);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
   border-radius: 0 0 1.5rem 1.5rem;
-}
+  }
+  
+  @keyframes gradient {
+  0% {
+  background-position: 0% 50%;
+  }
+  50% {
+  background-position: 100% 50%;
+  }
+  100% {
+  background-position: 0% 50%;
+  }  
+  }
 
 .footer {
   background-color: #0020cd;
