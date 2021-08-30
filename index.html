@@ -21,19 +21,15 @@
         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-6 px-0 mx-auto colmain">
 
             <div class="header">
-                <div class="text-center">
-                    <img src="img/logoapp.png" class="d-block-inline pt-4 pb-4" width="100">
-                    <h1 class="h3 d-inline ml-2 text-white font-weight-bold">VIGIA URBANO</h1>
-                </div>
+                <img src="img/logoapp.png" class="pt-3 pb-3 rounded mx-auto d-block" width="100">
             </div>
 
-            <button role="tab" class="tablinks mt-2 mb-2 ml-3 pl-1"
-                onclick="tabChanging(event, 'entrar', 'backentrar')">
+            <button role="tab" class="tablinks mt-2 mb-2 ml-3 pl-1">
                 <span role="tab" class="backLogin" id="backentrar">Denúncia</span>
             </button>
 
             <div class="ml-1 mr-1">
-                <div id="entrar" class="tabcontent">
+                <div id="denuncia" class="tabcontent">
 
                     <form class="pt-sm-5" action="index.html">
                         <div class="loginContent ml-3 mr-3">
@@ -65,53 +61,65 @@
                             <div class="form-check ml-3 mr-3 px-0">
                                 <div class="container backIcons">
                                     <div class="row text-center px-0">
-                                        <div class="col pt-1 px-0">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="inlineRadio1" value="option1">
-                                            <label class="form-check-label" for="inlineRadio1">
-                                                <img src="img/logoapp2.png" width="100px">
-                                                <span class="d-block pb-2">Crime 1</span>
+                                        <div class="col pt-2 px-0">
+                                            <input class="form-check-input" type="radio" name="Crimes" id="crimeAssalto"
+                                                value="Assalto" onclick="CrimeList(event, 'descHidden')">
+                                            <label class="form-check-label" for="crimeAssalto">
+                                                <img src="img/assalto.png" width="100px">
+                                                <span class="d-block pb-2">Assalto</span>
                                             </label>
 
 
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">
-                                                <img src="img/logoapp2.png" width="100px">
-                                                <span class="d-block">Crime 2</span>
-                                            </label>
-                                        </div>
-
-                                        <div class="col pt-1 pb-1 px-0">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="inlineRadio3" value="option3">
-                                            <label class="form-check-label" for="inlineRadio3">
-                                                <img src="img/logoapp2.png" width="100px">
-                                                <span class="d-block pb-2">Crime 3</span>
-                                            </label>
-
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="inlineRadio4" value="option4">
-                                            <label class="form-check-label" for="inlineRadio4">
-                                                <img src="img/logoapp2.png" width="100px">
-                                                <span class="d-block">Crime 4</span>
+                                            <input class="form-check-input" type="radio" name="Crimes" id="crimeRV"
+                                                value="Roubo de veículo" onclick="CrimeList(event, 'descHidden')">
+                                            <label class="form-check-label" for="crimeRV">
+                                                <img src="img/rv.png" width="100px">
+                                                <span class="d-block">Roubo <br> de veículo</span>
                                             </label>
                                         </div>
 
-                                        <div class="col pt-1 px-0">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="inlineRadio5" value="option5">
-                                            <label class="form-check-label" for="inlineRadio5">
-                                                <img src="img/logoapp2.png" width="100px">
-                                                <span class="d-block pb-2">Crime 5</span>
+                                        <div class="col pt-2 pb-1 px-0">
+                                            <input class="form-check-input" type="radio" name="Crimes"
+                                                id="crimeVandalismo" value="Vandalismo"
+                                                onclick="CrimeList(event, 'descHidden')">
+                                            <label class="form-check-label" for="crimeVandalismo">
+                                                <img src="img/vandalismo.png" width="100px">
+                                                <span class="d-block pb-2">Vandalismo</span>
                                             </label>
 
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="inlineRadio6" value="option6">
-                                            <label class="form-check-label" for="inlineRadio6">
-                                                <img src="img/logoapp2.png" width="100px">
-                                                <span class="d-block">Crime 6</span>
+                                            <input class="form-check-input" type="radio" name="Crimes" id="crimeVD"
+                                                value="Venda de drogas" onclick="CrimeList(event, 'descHidden')">
+                                            <label class="form-check-label" for="crimeVD">
+                                                <img src="img/vd.png" width="100px">
+                                                <span class="d-block">Venda <br> de drogas</span>
                                             </label>
+                                        </div>
+
+                                        <div class="col pt-2 px-0">
+                                            <input class="form-check-input" type="radio" name="Crimes"
+                                                id="crimeHomicidio" value="Homicídio"
+                                                onclick="CrimeList(event, 'descHidden')">
+                                            <label class="form-check-label" for="crimeHomicidio">
+                                                <img src="img/homicidio.png" width="100px">
+                                                <span class="d-block pb-2">Homicídio</span>
+                                            </label>
+
+                                            <input class="form-check-input" type="radio" name="Crimes" id="crimeOutros"
+                                                value="Outros" onclick="CrimeList(event, 'desc')">
+                                            <label class="form-check-label" for="crimeOutros">
+                                                <img src="img/outros.png" width="100px">
+                                                <span class="d-block">Outros</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+
+                                    <div id="descHidden"></div>
+                                    <div id="desc" class="desc mt-3 mb-3">
+                                        <div class="form-floating">
+                                            <label class="ml-2 pl-1" for="floatingTextarea2">Descrição</label>
+                                            <textarea class="form-control" placeholder="Escreva o que ocorreu"
+                                                id="floatingTextarea2" style="height: 150px"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -125,7 +133,7 @@
                         </div>
                         <div class="pl-3 pr-3" style="height:306px; width:100%; display:inline-block; overflow:hidden;">
                             <iframe class="custom-google-map"
-                                style="position:relative; top:-54px; border: none; padding-bottom: 50px;"
+                                style="position:relative; top:-55px; border: none; padding-bottom: 50px;"
                                 src="https://www.google.com/maps/d/embed?mid=1XLW4et--TSDUBZowPq23kx-5Sgoc88Ep"
                                 width="100%" height="406">
                             </iframe>
@@ -145,7 +153,6 @@
                         </div>
 
                     </form>
-                    <div class="fixed-bottom m-auto footer"></div>
                 </div>
             </div>
         </div>

@@ -13,13 +13,6 @@
   border-radius: 0 0 1.5rem 1.5rem;
 }
 
-.footer {
-  background-color: #0020cd;
-  border-radius: 1.5rem 1.5rem 0 0;
-  height: 50px;
-  width: 570px;
-}
-
 .colmain {
   background-color: #fff;
   height: 100vh;
@@ -196,26 +189,31 @@ input.form-check-input {
 }
 
 input.form-check-input + label img {
-  border: solid transparent 5px;
+  border: solid transparent 4px;
   border-radius: 5rem;
   cursor: pointer;
 }
 
 input.form-check-input:checked + label img {
   transition: 0.5s;
-  border: solid #0020cd 5px;
+  border: solid #555 4px;
   border-radius: 5rem;
 }
 
 .backIcons {
-  background-color: #d9d9d9;
-  border: solid #d9d9d9 1px;
+  background-color: #eeeeee;
+  border: solid #eeeeee 1px;
   border-radius: 5px;
 }
 
 .btnEnviar {
   padding-bottom: 1rem;
 }
+
+.desc {
+  display: none; 
+}
+
 /* #endregion */
 
 /* #region */

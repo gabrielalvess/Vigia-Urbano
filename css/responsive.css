@@ -7,6 +7,10 @@
   button.btnLogin {
     width: 100%;
   }
+
+  .crimeList {
+    width: 100%;
+  }
 }
 
 @media (min-width: 575px) {

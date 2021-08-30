@@ -44,3 +44,15 @@ inputs.forEach(input => {
 	input.addEventListener("focus", addcl);
 	input.addEventListener("blur", remcl);
 });
+
+function CrimeList(evt, tab1) {
+  var i, desc;
+
+  desc = document.getElementsByClassName("desc");
+  for (i = 0; i < desc.length; i++) {
+    desc[i].style.display = "none";
+  }
+  
+  document.getElementById(tab1).style.display = "block";
+
+}
