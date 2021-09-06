@@ -211,7 +211,56 @@ input.form-check-input:checked + label img {
 }
 
 .desc {
-  display: none; 
+  display: none;
+}
+
+/* #endregion */
+
+/* #region Feed */
+
+.feedBottons {
+  height: 75px;
+  width: 540px;
+}
+
+.tabFeed {
+  color: #fff;
+  background-color: unset;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tabFeed .icon {
+  font-size: 200%;
+  font-weight: 900;
+}
+
+.tabFeed#backVerificado {
+  background-color: #0020cd;
+  border-radius: 1rem 0rem 0rem 0rem;
+}
+
+.tabFeed#backnVerificado {
+  background-color: #c3c3c3;
+  border-radius: 0rem 1rem 0rem 0rem;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+#nVerificado {
+  display: none;
+  padding-bottom: 6rem;
+}
+
+#verificado {
+  padding-bottom: 6rem;
 }
 
 /* #endregion */
@@ -219,3 +268,36 @@ input.form-check-input:checked + label img {
 /* #region */
 
 /* #endregion */
+
+.post {
+  background: #fff;
+  box-shadow: 0px 0px 20px rgba(34, 35, 58, 0.5);
+  display: flex;
+  flex-direction: row;
+  border-radius: 1rem;
+  position: relative;
+  min-height: 200px;
+  cursor: pointer;
+}
+
+.icone {
+  background-color: #0020cd;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.iconeCrime {
+  margin-top: 1rem;
+  background-color: #fff;
+  width: 72px;
+  border: solid #fff 6px;
+  border-radius: 100%;
+}
+
+.title {
+  margin-top: 2.6rem;
+  border-bottom: solid #0020cd 2px;
+}
+
+.post-title {
+  margin-left: 4rem;
+}

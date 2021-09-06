@@ -11,6 +11,10 @@
   .crimeList {
     width: 100%;
   }
+
+  .feedBottons {
+    width: 100%;
+  }
 }
 
 @media (min-width: 575px) {

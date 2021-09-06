@@ -1,5 +1,7 @@
 // Tabs Button
 function tabChanging(evt, tab1, tab2) {
+
+  //Login
   var i, tabcontent, tablinks, backLogin;
 
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -22,6 +24,40 @@ function tabChanging(evt, tab1, tab2) {
   document.getElementById(tab2).style.backgroundColor = "#0020cd";
   evt.currentTarget.className += " active";
 
+
+  // Denuncia
+  var i, desc;
+
+  desc = document.getElementsByClassName("desc");
+  for (i = 0; i < desc.length; i++) {
+    desc[i].style.display = "none";
+  }
+  
+  document.getElementById(tab1).style.display = "block";
+
+
+  //Feed
+  var i, tabcontent, backFeed, tabFeed;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  backFeed = document.getElementsByClassName("tabFeed");
+  for (i = 0; i < backFeed.length; i++) {
+    backFeed[i].style.backgroundColor = "#C3C3C3";
+  }
+
+  tabFeed = document.getElementsByClassName("tabFeed");
+  for (i = 0; i < tabFeed.length; i++) {
+    tabFeed[i].className = tabFeed[i].className.replace(" active", "");
+  }
+  document.getElementById(tab1).style.display = "block";
+  evt.currentTarget.className += " active";
+
+  document.getElementById(tab2).style.backgroundColor = "#0020cd";
+  evt.currentTarget.className += " active";
 }
 
 // Inputs
@@ -44,15 +80,3 @@ inputs.forEach(input => {
 	input.addEventListener("focus", addcl);
 	input.addEventListener("blur", remcl);
 });
-
-function CrimeList(evt, tab1) {
-  var i, desc;
-
-  desc = document.getElementsByClassName("desc");
-  for (i = 0; i < desc.length; i++) {
-    desc[i].style.display = "none";
-  }
-  
-  document.getElementById(tab1).style.display = "block";
-
-}
